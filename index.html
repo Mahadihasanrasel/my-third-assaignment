@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+   
+    <!-- tailwind custom -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
+  <header>
+    <!-- banner section  -->
+    <section>
+     <div class="my-10">
+      <div class="carousel mx-auto">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div class="flex flex-col flex-start lg:w-[500px] h-[100px] p-4 top-[600px] left-[1000px] bg-black absolute">
+            <h1 class="text-2xl text-white font-extrabold">Meet all the heroes from the field</h1>
+            <p class="text-gray text-white font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❯</a> 
+            <a href="#slide2" class="btn btn-circle">❮</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/4.png" class="w-full" />
+          <div class=" w-[500px] lg:w-[500px] h-[100px] p-4 top-[600px] left-[1000px] bg-black absolute">
+            <h1 class="text-2xl text-white font-extrabold">Meet all the heroes from the field</h1>
+            <p class="text-gray text-white font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+     </div>
+    </section>
+
+  </header>
+  <main>
+
+  </main>
+  <footer>
+
+  </footer>
     
 </body>
 </html>
